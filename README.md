@@ -101,7 +101,9 @@ una cita dentro del .tex se realiza asi:
 		\node (start) [startstop] {Inicio};
 		\node (pro1) [process, below of=start, yshift=-1cm] {Lorem ipsum};
 		```
+
     Cada proceso se formatea asi: ```\node (nombre del proceso) [process, below of=proceso anterior, yshift=-1cm] {Texto proceso};```
+    
 
     ```
 		%% las flechas van despues de los componentes del diagrama de flujo
