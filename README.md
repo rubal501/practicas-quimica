@@ -17,7 +17,9 @@ La complejidad de Github depende si los usas con un sistema grafico o en la term
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}```
 importante ponerlo para tener español
-```\usepackage{tikz}
+
+```
+\usepackage{tikz}
 \usetikzlibrary{shapes.geometric, arrows}```
 permite hacer diagramas de flujo
 
@@ -86,7 +88,7 @@ los conceptos investigados antes de la pracica
 ### Citas
 Para poder realizar citas de manera automatizada es necesario primero declararlas en el archivo .bib siguiendo estos [formatos][ffd2140f]
 
-  [ffd2140f]: https://es.sharelatex.com/learn/Bibliography_management_in_LaTeX "aiuda formatos"
+
 una cita dentro del .tex se realiza asi:
 ```\cite{nombre cita}```
 
@@ -106,18 +108,20 @@ una cita dentro del .tex se realiza asi:
 		\draw [arrow] (start) -- (pro1);
 		\draw [arrow] (pro1) -- (pro2);
 		\draw [arrow] (pro2) -- (pro3);    
-	\end{tikzpicture}
-  \end{center}
+    \end{tikzpicture}
+    \end{center}
   ```
   las flechas se declaran asi: ```\draw [arrow] (proceso del que empieza) -- (proceso al que va); ```
   para mas informacion checa [estto][260b56d4]
-  ```
-\section{Precentación de resultados}
-\paragraph{resultado de paso 1}
-El hierro tiene un color café y de asemeja al café en polvo y no tiene olor(aparente), el Azufre tiene un color verde limón sin olor(aparente).
-\paragraph{resultado del paso 2}
-Los elementos mantienen sus propiedades por lo que se le considera mezcla(entre ella el color) como se puede ver en la figura \ref{fig:obs1}
-....
+
+```
+  \section{Precentación de resultados}
+  \paragraph{resultado de paso 1}
+  El hierro tiene un color café y de asemeja al café en polvo y no tiene olor(aparente), el Azufre tiene un color verde limón sin olor(aparente).
+  \paragraph{resultado del paso 2}
+  Los elementos mantienen sus propiedades por lo que se le considera mezcla(entre ella el color) como se puede ver en la figura \ref{fig:obs1}
+  ....
+
 ```
   [260b56d4]: https://es.sharelatex.com/blog/2013/08/29/tikz-series-pt3.html "aiuuda"
 
@@ -125,23 +129,24 @@ Los elementos mantienen sus propiedades por lo que se le considera mezcla(entre 
 
 **partir de aqui empiezan las imagenes de lo que se observo en la practica, para agregar una imagen se sigue este formato**
 ```
-\begin{figure}
-	\centering
-	\includegraphics[width=0.5\textwidth]{nombre de figura}
-	\caption{descripcion de figura .}
-	\label{referencia}
-\end{figure}
+  \begin{figure}
+	 \centering
+	 \includegraphics[width=0.5\textwidth]{nombre de figura}
+	 \caption{descripcion de figura .}
+	 \label{referencia}
+  \end{figure}
 ```
 
 ```\section{Analisis de resultados.}```
 
 AQUI VA EL ANALISIS DE LOS resultados
 ```
-\bibliographystyle{apalike}
-\bibliography{references}
-\end{document}
+  \bibliographystyle{apalike}
+  \bibliography{references}
+  \end{document}
 ```
 Bibliografia y fin de documento
+  [ffd2140f]: https://es.sharelatex.com/learn/Bibliography_management_in_LaTeX "aiuda formatos"
   [dc66d3cc]: https://es.sharelatex.com/learn/Lists "aiuda"
   [73e2c5e2]: http://www.xm1math.net/texmaker/index.html "editor"
   [6a601149]: https://www.gitkraken.com/ "Gui de Git"
