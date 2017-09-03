@@ -146,6 +146,8 @@ AQUI VA EL ANALISIS DE LOS resultados
   \end{document}
 ```
 Bibliografia y fin de documento
+
+
   [ffd2140f]: https://es.sharelatex.com/learn/Bibliography_management_in_LaTeX "aiuda formatos"
   [dc66d3cc]: https://es.sharelatex.com/learn/Lists "aiuda"
   [73e2c5e2]: http://www.xm1math.net/texmaker/index.html "editor"
