@@ -17,7 +17,8 @@ Muñoz Carpio Erick David
 }
 \date{\today}
 
-\usepackage{natbib}
+\usepackage{biblatex}
+\addbibresource{references.bib}
 \usepackage{graphicx}
 %%%sfdasfasffsf
 \tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
@@ -58,7 +59,8 @@ Muñoz Carpio Erick David
 \end{wrapfigure}
 El azufre es el elemento numero 16 de la tabla periodica, ubicado en la X familia y en el Y grupo. Tiene una masa atomica de 32.065, ademas de tener propiedades electricas de aislante y una resistencia de Z.\par
 Se encuentra naturalmente en volcanes, cerca de aguas termales y meteoritos \par
-Algunos de los usos que tiene el Azufre es como fertilizante \cite{acuna1991fertilizacion}
+Algunos de los usos que tiene el Azufre es como fertilizante \cite{acuna1991fertilizacion}, la mayoria del azufre se convierte en ácido sulfúrico, el cual se utiliza en refinerias de petróleo, plaguicidas  ,tratamiento de aguas reciduales, baterias de plomo, eliminación de óxido de hierro, fabricacíon de nylon y producción de ácido clorhídrico. \par
+%% solucionar el problema de las citas
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id sem libero. Proin vitae purus rutrum, scelerisque turpis non, aliquam massa. Pellentesque vel cursus diam. Curabitur quis ligula nec enim sodales hendrerit. Donec sed risus ipsum. Aenean molestie aliquam nisi, eu eleifend velit bibendum non. Aenean venenatis ligula facilisis, pellentesque metus a, placerat orci. Morbi nec nibh eget turpis viverra mattis quis vel leo. Nunc et ligula sollicitudin, consectetur arcu sed, cursus nisl. Fusce congue porta lorem quis fermentum. Fusce congue eu justo sit amet facilisis.\par
 \subsection{Acido sulfhídrico.}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id sem libero. Proin vitae purus rutrum, scelerisque turpis non, aliquam massa. Pellentesque vel cursus diam. Curabitur quis ligula nec enim sodales hendrerit. Donec sed risus ipsum. Aenean molestie aliquam nisi, eu eleifend velit bibendum non. Aenean venenatis ligula facilisis, pellentesque metus a, placerat orci. Morbi nec nibh eget turpis viverra mattis quis vel leo. Nunc et ligula sollicitudin, consectetur arcu sed, cursus nisl. Fusce congue porta lorem quis fermentum. Fusce congue eu justo sit amet facilisis.\par
@@ -70,19 +72,28 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id sem libero. Pro
 \section{Desarrollo experimental.}
 \subsection{Diagrama de flujo.}\par
 \begin{center}
-	\begin{tikzpicture}{node distance=2}
-		
-		\node (start) [startstop] {Inicio};
-		\node (pro1) [process, below of=start, yshift=-1cm] {Lorem ipsum};
-		\node (pro2) [process, below of=pro1, yshift=-1cm] {Lorem ipsum};
-		\node (pro3) [process, below of=pro2, yshift=-1cm] {Lorem ipsum};
-		%% las flechas van despues de los componentes del diagrama de flujo
-		\draw [arrow] (start) -- (pro1);
-		\draw [arrow] (pro1) -- (pro2);
-		\draw [arrow] (pro2) -- (pro3);
-		    
-		    
-	\end{tikzpicture}
+	\begin{tikzpicture}[node distance=2cm]
+		\node (start) [startstop] {Start};
+		\node (pro1) [process, below of=start] {En una hoja de papel dividida \par
+		 en dos inserta un poco de \textbf{Hierro} y \textbf{Azufre}};
+		 \node (pro2) [process, below of=pro1] {Con el \textbf{agitador de vidrio integra perfectamente el Hierro y el  azufre} };
+		 \node (pro3) [process, below of=pro2] {Dividir el contenido del papel en dos porciones iguales\textbf{A y B} };
+		 \node (pro4) [process, below of=pro3] {inserta el contenido de \textbf{A} en un tubo de ensayo y agrega a este \textbf{ HCL} };
+		 \node (pro5) [process, below of=pro4] { inserta el contenido de \textbf{b} en otro tubo de ensayo};
+		 \node (pro6) [process, below of=pro5] {Llena el vaso de precipitado con agua hasta la \textbf{mitad} };
+		 \node (pro7) [process, below of=pro6] { calienta el tubo de ensayo que contiene la parte \textbf{B} hasta el \textbf{rojo vivo}};
+		 \node (pro8) [process, below of=pro7] { Insertar el tubo \textbf{caliente} dentro del vaso con agua fria};
+		 
+		 \draw [arrow] (start) -- (pro1);
+		 \draw [arrow] (pro1) -- (pro2)
+		 \draw [arrow] (pro2) -- (pro3);
+		 \draw [arrow] (pro3) -- (pro4);
+		 \draw [arrow] (pro4) -- (pro5);
+		 \draw [arrow] (pro5) -- (pro6);
+		 \draw [arrow] (pro6) -- (pro7);
+		  \draw [arrow] (pro7) -- (pro8);
+		\end{tikzpicture}
+
 \end{center}
 \section{Precentación de resultados}
 \paragraph{resultado de paso 1}
@@ -126,6 +137,6 @@ La mezcla de ácido clorhídrico con el sólido que se formó previamente empez�
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id sem libero. Proin vitae purus rutrum, scelerisque turpis non, aliquam massa. Pellentesque vel cursus diam. Curabitur quis ligula nec enim sodales hendrerit. Donec sed risus ipsum. Aenean molestie aliquam nisi, eu eleifend velit bibendum non. Aenean venenatis ligula facilisis, pellentesque metus a, placerat orci. Morbi nec nibh eget turpis viverra mattis quis vel leo. Nunc et ligula sollicitudin, consectetur arcu sed, cursus nisl. Fusce congue porta lorem quis fermentum. Fusce congue eu justo sit amet facilisis.\par
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id sem libero. Proin vitae purus rutrum, scelerisque turpis non, aliquam massa. Pellentesque vel cursus diam. Curabitur quis ligula nec enim sodales hendrerit. Donec sed risus ipsum. Aenean molestie aliquam nisi, eu eleifend velit bibendum non. Aenean venenatis ligula facilisis, pellentesque metus a, placerat orci. Morbi nec nibh eget turpis viverra mattis quis vel leo. Nunc et ligula sollicitudin, consectetur arcu sed, cursus nisl. Fusce congue porta lorem quis fermentum. Fusce congue eu justo sit amet facilisis.\par
 
-\bibliographystyle{apalike}
-\bibliography{references}
+
+\printbibliography
 \end{document}

@@ -1,0 +1,10 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Objetivos.}{3}
+\contentsline {section}{\numberline {2}Investigaci\IeC {\'o}n previa.}{3}
+\contentsline {subsection}{\numberline {2.1}Nitrato c\IeC {\'u}prico.}{3}
+\contentsline {subsection}{\numberline {2.2}\IeC {\'O}xido c\IeC {\'u}prico.}{3}
+\contentsline {subsection}{\numberline {2.3}Hidr\IeC {\'o}xido c\IeC {\'u}prico.}{3}
+\contentsline {section}{\numberline {3}Desarrollo experimental.}{4}
+\contentsline {subsection}{\numberline {3.1}Diagrama de flujo.}{4}
+\contentsline {section}{\numberline {4}Precentaci\IeC {\'o}n de resultados}{4}
+\contentsline {section}{\numberline {5}Analisis de resultados.}{5}
